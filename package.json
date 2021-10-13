@@ -1,6 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
+  "type": "module",
   "description": "[![Actions Status](https://github.com/jenka-ej/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/jenka-ej/frontend-project-lvl1/actions)",
   "main": "index.js",
   "scripts": {
@@ -17,6 +18,6 @@
   },
   "homepage": "https://github.com/jenka-ej/frontend-project-lvl1#readme",
   "bin": {
-    "code": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js"
   }
 }
