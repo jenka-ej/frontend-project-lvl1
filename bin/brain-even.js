@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { username1 } from '../src/cli.js';
 import readlineSync from 'readline-sync';
 export const username3 = console.log('Answer "yes" if the number is even, otherwise answer "no".');
@@ -18,7 +19,7 @@ for (let i = 0; i < 3; i += 1) {
 			console.log("'yes' is wrong answer ;(. Correct answer was 'no'.");
                         break;
 		}
-       }
+	}
 };
 if (result === 3) {
 	console.log('Congratulations, ' + username1 + '!');
