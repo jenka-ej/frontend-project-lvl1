@@ -27,7 +27,7 @@ for (let i = 0; i < 3; i += 1) {
 	};
 
 	if (nod(rand, rand1) === Number(username5)) {
-		console.log('Correct');
+		console.log('Correct!');
 		result += 1;
 	} else {
 		console.log("'" + username5 + "'" + ' is wrong answer ;(. Correct answer was ' + "'" + nod(rand, rand1) + "'.");
