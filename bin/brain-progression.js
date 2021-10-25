@@ -35,7 +35,7 @@ for (let i = 0; i < 3; i += 1) {
 	const username5 = readlineSync.question('Your answer: ');
 
 	if (Number(username5) === answer) {
-		console.log('Correct');
+		console.log('Correct!');
 		result += 1;
 	} else {
 		console.log("'" + username5 + "' is wrong answer ;(. Correct answer was '" + answer + "'.");
