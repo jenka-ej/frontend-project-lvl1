@@ -22,35 +22,35 @@ for (let i = 0; i < 1; i += 1) {
     console.log('Correct');
     result += 1;
   } else {
-    console.log("'" + username5 + "'" + " is wrong answer ;(. Correct answer was '" + expression1 + "'.");
+    console.log(`'${username5}' is wrong answer ;(. Correct answer was '${expression1}'.`);
     break;
   }
 
-  console.log('Question: ' + rand2 + ' - ' + rand3);
+  console.log(`Question: ${rand2} - ${rand3}`);
   const username7 = readlineSync.question('Your answer: ');
 
   if (Number(username7) === expression2) {
     console.log('Correct');
     result += 1;
   } else {
-    console.log("'" + username7 + "'" + " is wrong answer ;(. Correct answer was '" + expression2 + "'.");
+    console.log(`'${username7}' is wrong answer ;(. Correct answer was '${expression2}'.`);
     break;
   }
 
-  console.log('Question: ' + rand4 + ' * ' + rand5);
+  console.log(`Question: ${rand4} * ${rand5}`);
   const username9 = readlineSync.question('Your answer: ');
 
   if (Number(username9) === expression3) {
     console.log('Correct');
     result += 1;
   } else {
-    console.log("'" + username9 + "'" + " is wrong answer ;(. Correct answer was '" + expression3 + "'.");
+    console.log(`'${username9}' is wrong answer ;(. Correct answer was '${expression3}'.`);
     break;
   }
 }
 
 if (result === 3) {
-  console.log('Congratulations, ' + username1 + '!');
+  console.log(`Congratulations, ${username1}!`);
 } else {
-  console.log("Let's try again, " + username1 + '!');
+  console.log(`Let's try again, ${username1}!`);
 }
