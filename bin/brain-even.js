@@ -10,7 +10,7 @@ for (let i = 0; i < 3; i += 1) {
   console.log('Question: ' + rand);
   const username5 = readlineSync.question('Your answer: ');
 
-  if ((rand % 2 === 0 && username5 === "yes") || (rand % 2 !== 0 && username5 === "no")) {
+  if ((rand % 2 === 0 && username5 === 'yes') || (rand % 2 !== 0 && username5 === 'no')) {
     console.log('Correct');
     result += 1;
   } else {
