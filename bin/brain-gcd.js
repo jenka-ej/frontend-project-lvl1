@@ -6,9 +6,9 @@ import { username1 } from '../src/cli.js';
 console.log('Find the greatest common divisor of given numbers.');
 let result = 0;
 for (let i = 0; i < 3; i += 1) {
-  let rand = Math.floor(Math.random() * 100);
-  let rand1 = Math.floor(Math.random() * 100);
-  const username4 = console.log('Question: ' + rand + ' ' + rand1);
+  const rand = Math.floor(Math.random() * 100);
+  const rand1 = Math.floor(Math.random() * 100);
+  console.log(`Question: ${rand} ${rand1}`);
   const username5 = readlineSync.question('Your answer: ');
   const nod = (num, num1) => {
     if (num < num1) {
@@ -26,19 +26,19 @@ for (let i = 0; i < 3; i += 1) {
     } else {
       return num;
     }
-  }
+  };
 
   if (nod(rand, rand1) === Number(username5)) {
     console.log('Correct!');
     result += 1;
   } else {
-    console.log("'" + username5 + "'" + ' is wrong answer ;(. Correct answer was ' + "'" + nod(rand, rand1) + "'.");
+    console.log(`'${username5}' is wrong answer ;(. Correct answer was '${nod(rand, rand1)}'.`);
     break;
   }
 }
 
 if (result === 3) {
-  console.log('Congratulations, ' + username1 + '!');
+  console.log(`Congratulations, ${username1}!`);
 } else {
-  console.log("Let's try again, " + username1 + '!');
+  console.log(`Let's try again, ${username1}!`);
 }
