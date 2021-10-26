@@ -15,7 +15,7 @@ for (let i = 0; i < 1; i += 1) {
   const expression1 = rand + rand1;
   const expression2 = rand2 - rand3;
   const expression3 = rand4 * rand5;
-  console.log('Question: ' + rand + ' + ' + rand1);
+  console.log(`Question: ${rand} + ${rand1}`);
   const username5 = readlineSync.question('Your answer: ');
 
   if (Number(username5) === expression1) {
