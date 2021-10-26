@@ -16,40 +16,40 @@ const progression = () => {
     mass.push(presult);
   }
   return mass;
-}
+};
 
 const censore = (array) => {
-  const rand5 = Math.floor(Math.random() * 10)
+  const rand5 = Math.floor(Math.random() * 10);
   answer = array[rand5];
   for (let i = 0; i < array.length; i += 1) {
     if (i === rand5) {
-      array[i] = '..'; 
+      array[i] = '..';
     }
   }
   return array;
-}
+};
 
 const join = (array) => {
-  let str = array.join(' ');
+  const str = array.join(' ');
   return str;
-}
+};
 
 let result = 0;
 for (let i = 0; i < 3; i += 1) {
-  const username4 = console.log('Question: ' + join(censore(progression())));
+  console.log(`Question: ${join(censore(progression()))}`);
   const username5 = readlineSync.question('Your answer: ');
 
   if (Number(username5) === answer) {
     console.log('Correct!');
     result += 1;
   } else {
-    console.log("'" + username5 + "' is wrong answer ;(. Correct answer was '" + answer + "'.");
+    console.log(`'${username5}' is wrong answer ;(. Correct answer was '${answer}'.`);
     break;
   }
 }
 
 if (result === 3) {
-  console.log('Congratulations, ' + username1 + '!');
+  console.log(`Congratulations, ${username1}!`);
 } else {
-  console.log("Let's try again, " + username1 + '!');
+  console.log(`Let's try again, ${username1}!`);
 }
