@@ -15,7 +15,7 @@ for (let i = 0; i < 3; i += 1) {
       }
     }
     return rand;
-  }
+  };
 
   const rand2 = check();
   console.log(`Question: ${rand2}`);
