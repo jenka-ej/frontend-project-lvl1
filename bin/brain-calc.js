@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import { username1 } from '../src/cli.js';
+
 import readlineSync from 'readline-sync';
 export const username3 = console.log('What is the result of the expression?');
 let result = 0;
