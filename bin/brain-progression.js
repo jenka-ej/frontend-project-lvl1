@@ -42,14 +42,14 @@ for (let i = 0; i < 3; i += 1) {
   if (Number(username5) === answer) {
     console.log('Correct!');
     result += 1;
-	} else {
-		console.log("'" + username5 + "' is wrong answer ;(. Correct answer was '" + answer + "'.");
-		break;
-	}
+  } else {
+    console.log("'" + username5 + "' is wrong answer ;(. Correct answer was '" + answer + "'.");
+    break;
+  }
 }
 
 if (result === 3) {
-	console.log('Congratulations, ' + username1 + '!');
+  console.log('Congratulations, ' + username1 + '!');
 } else {
   console.log("Let's try again, " + username1 + '!');
 }
