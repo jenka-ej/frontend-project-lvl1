@@ -13,23 +13,23 @@ for (let i = 0; i < 3; i += 1) {
   const nod = (num, num1) => {
     let del = 0;
     let del1 = 0;
-    if (num < num1) {
-      for (let m = num; m !== 0; m -= 1) {
-        if (num1 % m === 0 && num % m === 0) {
-          del = m;
-          break;
+      if (num < num1) {
+        for (let m = num; m !== 0; m -= 1) {
+          if (num1 % m === 0 && num % m === 0) {
+            del = m;
+            break;
+          }
         }
-      }
-      return del;
-    } else if (num > num1) {
-      for (let m = num1; m !== 0; m -= 1) {
-        if (num1 % m === 0 && num % m === 0) {
-          del1 = m;
-          break;
+        return del;
+      } else if (num > num1) {
+        for (let m = num1; m !== 0; m -= 1) {
+          if (num1 % m === 0 && num % m === 0) {
+            del1 = m;
+            break;
+          }
         }
+        return del1;
       }
-      return del1;
-    }
     return num;
   };
 
