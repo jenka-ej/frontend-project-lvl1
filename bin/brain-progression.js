@@ -18,12 +18,12 @@ const progression = () => {
   return mass;
 };
 
-const censore = (array) => {
+const censore = (array1) => {
   const rand5 = Math.floor(Math.random() * 10);
-  answer = array[rand5];
+  answer = array1[rand5];
   const space = '..';
-  array[rand5] = space;
-  return array;
+  array1[rand5] = space;
+  return array1;
 };
 
 const join = (array) => {
