@@ -14,14 +14,14 @@ for (let i = 0; i < 3; i += 1) {
     if (num < num1) {
       for (let m = num; m !== 0; m -= 1) {
         if (num1 % m === 0 && num % m === 0) {
-          return m;
+          break;
         }
       }
       return m;
     } else if (num > num1) {
       for (let m = num1; m !== 0; m -= 1) {
         if (num1 % m === 0 && num % m === 0) {
-          return m;
+          break;
         }
       }
       return m;
