@@ -23,11 +23,11 @@ const censore = (array1) => {
   answer = array1[rand5];
   const space = '..';
   const newmass = [];
-  for (const item of array1) {
-    if (array1.indexOf(item) === rand5) {
+  for (let n = 0; n < array1.length; n += 1) {
+    if (n === rand5) {
       newmass.push(space);
     } else {
-      newmass.push(item);
+      newmass.push(array1[n]);
     }
   }
   return newmass;
