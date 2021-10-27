@@ -16,18 +16,16 @@ for (let i = 0; i < 3; i += 1) {
       for (let m = num; m !== 0; m -= 1) {
         if (num1 % m === 0 && num % m === 0) {
           del = m;
-          break;
+          return del;
         }
       }
-      return del;
     } else if (num > num1) {
       for (let m = num1; m !== 0; m -= 1) {
         if (num1 % m === 0 && num % m === 0) {
           del = m;
-          break;
+          return del;
         }
       }
-      return del;
     } else {
       return num;
     }
