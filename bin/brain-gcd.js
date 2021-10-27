@@ -4,7 +4,6 @@ import readlineSync from 'readline-sync';
 import { username1 } from '../src/cli.js';
 
 console.log('Find the greatest common divisor of given numbers.');
-let del = 0;
 let result = 0;
 for (let i = 0; i < 3; i += 1) {
   const rand = Math.floor(Math.random() * 100);
@@ -15,17 +14,19 @@ for (let i = 0; i < 3; i += 1) {
     if (num < num1) {
       for (let m = num; m !== 0; m -= 1) {
         if (num1 % m === 0 && num % m === 0) {
-          del = m;
-          return del;
+          const del = m;
+          break;
         }
       }
+      return del;
     } else if (num > num1) {
       for (let m = num1; m !== 0; m -= 1) {
         if (num1 % m === 0 && num % m === 0) {
-          del = m;
-          return del;
+          const del1 = m;
+          break;
         }
       }
+      return del1;
     } else {
       return num;
     }
