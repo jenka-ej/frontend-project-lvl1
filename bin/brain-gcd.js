@@ -21,6 +21,7 @@ for (let i = 0; i < 3; i += 1) {
         }
       }
       return del;
+    }
     if (num > num1) {
       for (let m = num1; m !== 0; m -= 1) {
         if (num1 % m === 0 && num % m === 0) {
