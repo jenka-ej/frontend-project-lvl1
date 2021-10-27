@@ -29,9 +29,8 @@ for (let i = 0; i < 3; i += 1) {
         }
       }
       return del1;
-    } else {
-      return num;
     }
+    return num;
   };
 
   if (nod(rand, rand1) === Number(username5)) {
