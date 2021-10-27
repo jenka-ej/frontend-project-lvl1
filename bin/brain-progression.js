@@ -22,8 +22,14 @@ const censore = (array1) => {
   const rand5 = Math.floor(Math.random() * 10);
   answer = array1[rand5];
   const space = '..';
-  array1[rand5] = space;
-  return array1;
+  const newmass = [];
+  for (const item of array1) {
+    if (item === answer) {
+      newmass.push(space);
+    } else {
+      newmass.push(item);
+    }
+  return newmass;
 };
 
 const join = (array) => {
