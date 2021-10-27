@@ -29,6 +29,7 @@ const censore = (array1) => {
     } else {
       newmass.push(item);
     }
+  }
   return newmass;
 };
 
