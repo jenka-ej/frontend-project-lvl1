@@ -21,8 +21,7 @@ const progression = () => {
 const censore = (array) => {
   const rand5 = Math.floor(Math.random() * 10);
   answer = array[rand5];
-  var i = array.indexOf(rand5);
-  array[i] = '..';
+  array[rand5] = '..';
   return array;
 };
 
