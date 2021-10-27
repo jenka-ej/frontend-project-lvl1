@@ -24,7 +24,7 @@ const censore = (array1) => {
   const space = '..';
   const newmass = [];
   for (const item of array1) {
-    if (item === answer) {
+    if (array1.indexOf(item) === rand5) {
       newmass.push(space);
     } else {
       newmass.push(item);
