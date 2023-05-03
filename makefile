@@ -1,12 +1,11 @@
-# Makefile
-install: # при первом клонировании репозитория
+install:
 	npm ci
 
-brain-games: # запуск js brain-games
+brain-games:
 	node bin/brain-games.js
 
-publish: # 
+publish:
 	publish --dry-run
 
-make lint: #
-	npx eslint
+lint:
+	npx eslint .
